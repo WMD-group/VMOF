@@ -1,0 +1,39 @@
+!Start Parameters:
+ INIWAV = 1        (Random initial wavefunction)
+ ICORELEVEL = 1    (Print corelevels in OUTCAR)
+ ISTART = 1
+
+!Parallel Options:
+ NPAR   =  8        (Max is no. nodes)
+
+
+!Electronic Relaxation:
+ PREC  = normal  (Precision level)
+ LREAL = .FALSE.      (Projection operators: automatic)
+ ALGO  = NORMAL      (Elect. algorithm: 38/48)
+ ENCUT = 600.00 eV (Plane-wave cutoff)
+ NELM  = 80        (Max number of SCF steps)
+ NELMIN = 5
+ EDIFF = 1E-08     (SCF convergence)
+ ISPIN =  1        (Close shell)
+
+
+
+LWAVE  =  .FALSE.
+LCHARG  =  .FALSE.
+
+IVDW = 11
+SIGMA = 0.01
+ISMEAR = 0
+
+GGA   =  PS       (PBEsol exchange-correlation)
+
+
+!Ionic Relaxation:
+ NSW    =      0     (Max ionic steps)
+ ISIF   =      2     (Stress/Relaxation: 2-Ions, 3-Ions+volume+Shape)
+
+!Miscellaneous:
+ LORBIT    =   10     (PAW radii for projected DOS)
+ NEDOS = 1000
+

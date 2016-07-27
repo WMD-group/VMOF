@@ -1,0 +1,268 @@
+###KEY####
+#ATOM TYPES
+
+#BDC ligand
+#C913 = Ccarb
+#O170 = OCarb
+#C902 = Cbenz2
+#C912 = Cbenz
+#H915 = Hbenz
+
+#BPDC ligand
+#C903 = Cbenz (connecting 2 aromatic rings)
+
+#DOBDC ligand
+#O922 = O (Cbenz-O)
+#C923 = C (Cbenz-O)
+
+#AZULENE ligand
+#Atom type = positions on azulene.png (in library folder) = further description
+#C918 = 6   =  7 member ring-913
+#H920 = on 4,5,7,8 =  H on azulene (7 member ring)
+#H921 = on 1,3   =  H on azulene (5 member ring)
+#C919 = 4,8,5,7   =  7 member ring-918 centre carbon
+#C917 = 9,10   =  joining C of 2 rings
+#C914 = 2   =  5 member ring tip- 913
+#C916 = 1,3   =  5 member ring centre
+
+#other atom types
+#O171 = inorganic oxygen
+#O75 = OH oxygen
+#H21 = OH hydrogen
+#O998 = O(h2O)
+#H999 = H (h2O)
+
+species   
+#BDC
+C913   core    1.070500
+O170   core   -1.080000
+C902   core    0.005000
+O171   core   -2.0
+H915   core    0.112500
+C912   core   -0.070250
+#BPDC
+C903   core   -0.0845
+#OH
+H21    core    0.150000
+O75    core   -1.150000
+#water
+O998   core   -0.834000
+H999   core    0.417000
+#DOBDC
+O922   core   -1.783223
+C923   core    0.893223
+#azulene
+C918   core    0.063 
+H920   core    0.063 
+H921   core    0.063 
+C919   core   -0.053 
+C917   core   -0.017 
+C914   core    0.064 
+C916   core   -0.040 
+#metals
+Zn172  core    2.0
+Zr     core    4.0000
+Ti     core    4.0000
+Al     core    3.0000
+
+
+harmonic intra bond
+#BDC
+C902  core C913  core  17.3458      1.50000    
+C912  core C912  core  26.4523      1.37500    
+C902  core C912  core  26.4523      1.37500    
+H915  core C912  core  29.4878      1.08000    
+C913  core O170  core  45.5327      1.26000    
+#BPDC
+C912  C903  26.450     1.3750
+C903  C903  26.020     1.4900
+#DOBDC
+C902  core C923  core  26.4523      1.37500     
+C912  core C923  core  26.4523      1.37500     
+C923  core O922  core  45.5327      1.26000     
+#AZULENE
+C913  core C914  core  17.3458      1.50000    
+C913  core C918  core  17.3458      1.50000    
+C914  core C916  core  35.5588      1.36000    
+C916  core C917  core  29.4878      1.40500    
+C917  core C919  core  17.3458      1.38000    
+C918  core C919  core  31.2224      1.38500    
+C919  core C919  core  31.2224      1.38500    
+H920  core C919  core  30.7887      1.09000    
+H921  core C916  core  30.3551      1.08000    
+C917  core C917  core  19.9476      1.52000    
+#BDC
+O170  core 0.520373E-02  1.70000 
+C912  core 0.303551E-02  1.99240 
+C902  core 0.303551E-02  1.99240 
+H915  core 0.130093E-02  1.35820 
+C913  core 0.303551E-02  2.00000 
+#BPDC
+C903  core 0.303551E-02  1.99240 
+#DOBDC
+C923  core 0.303551E-02  2.00000
+O922  core 0.520000E-02  1.70000 
+#AZULENE
+C914  core 0.216822E-02  2.10000
+C916  core 0.216822E-02  2.10000
+H921  core 0.130093E-02  1.35820
+H920  core 0.130093E-02  1.35820
+C919  core 0.290542E-02  1.99480
+C918  core 0.290542E-02  1.99480
+C917  core 0.429308E-02  1.86000
+#other 
+epsilon/sigma
+O75   core 0.833025E-02  1.76500
+H21   core 0.131766E-02  1.42010
+
+
+epsilon/sigma mm3
+O75   core 0.818288E-02  2.00846
+O170  core 0.255850E-02  3.64000  
+O171  core 0.820315E-02  3.18752  
+O922  core 0.645850E-02  3.70000  
+#metals
+epsilon/sigma mm3
+Zn172 core  0.3817E-02  4.279
+Zr    core 0.135622E-01  4.79103
+Ti1   core 0.253747E-01  3.93889
+Al3   core 0.806000E-02  4.06982
+
+mm3buck combine x13
+O75  core Ti core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O170  core Ti core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O171  core Ti core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+
+O75  core Al core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O170  core Al core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O171  core Al core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+
+O75  core Zr core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O170  core Zr core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O171  core Zr core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+
+O75  core Zn core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O170  core Zn core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O171  core Zn core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+O922  core Zn    core  184000.00      11.500000      2.5500000     &
+                      0.00 12.00 0 0 0
+
+lenn epsilon geometric all 12  6 x13 
+0.000 12.500
+
+
+
+three bond intra regular  
+#BDC
+C913  core O170  core O170  core 8.6729     133.00     0 0
+C912  core C902  core C912  core 3.4692     120.00     0 0
+C902  core C912  core C912  core 3.4692     120.00     0 0
+C902  core C912  core C913  core 3.9028     119.00     0 0
+C912  core H915  core C902  core 2.6019     120.00     0 0
+C912  core H915  core C912  core 2.6019     120.00     0 0
+C913  core C902  core O170  core 3.4692     116.00     0 0
+#BPBDC
+C912 C912   C903   3.470    120.00
+C912 C903  H915  2.600    120.00
+C903 C912 C912   3.470    120.00
+C912 C903 C912   3.470    120.00
+C903 C903 C912   3.470    120.00
+#BTC
+C902  core C912  core C912  core 3.4692     120.00
+C912  core C902  core C902  core 3.4692     120.00
+#DOBDC
+C923  core C912  core O922  core 3.4692     120.00     0 0
+C923  core C902  core O922  core 3.4692     120.00     0 0
+C912  core H915  core C923  core 2.6019     120.00     0 0
+C912  core C902  core C923  core 3.4692     120.00     0 0
+C902  core C913  core C923  core 3.9028     119.00     0 0
+C923  core C902  core C912  core 3.9028     119.00     0 0
+#AZULENE
+C916  core C914  core C917  core 6.0710     106.90
+C916  core H921  core C917  core 2.7753     126.70
+C916  core H921  core C914  core 2.7753     126.70
+C919  core C918  core C919  core 2.6019     128.60
+C918  core C919  core C919  core 2.6019     128.60
+C919  core C917  core C919  core 7.8056     129.30
+C919  core H920  core C919  core 3.2090     115.70
+C919  core H920  core C917  core 2.7753     115.00
+C919  core H920  core C918  core 2.7753     115.00
+C913  core C918  core O170  core 3.4692     116.00
+C913  core C914  core O170  core 3.4692     116.00
+C918  core C913  core C919  core 3.9028     119.00
+C914  core C913  core C916  core 3.9028     119.00
+C917  core C916  core C917  core 9.5402     109.50
+C917  core C916  core C919  core 2.6019     122.70
+C917  core C917  core C919  core 2.6019     127.80
+C914  core C916  core C916  core 3.9028     107.20
+
+torsion bond intra
+#BDC
+C902  cor C912  cor C912  cor C902  cor  0.13443       2 180.00     0
+C912  cor C902  cor C912  cor C912  cor  0.13443       2 180.00     0
+C902  cor C912  cor C912  cor H915  cor  0.18213       2 180.00     0
+C912  cor C902  cor C912  cor H915  cor  0.18213       2 180.00     0
+O170  cor C913  cor C902  cor C912  cor  0.26504       2 180.00     0
+C913  cor C902  cor C912  cor C912  cor  0.13443       2 180.00     0
+C913  cor C902  cor C912  cor H915  cor  0.10407       2 180.00     0
+H915  cor C912  cor C912  cor H915  cor  0.10407       2 180.00     0
+#BPDC
+torsion bond intra
+C902  cor C912  cor C903  cor C912  cor  0.13440       2 180.00
+C913  cor C902  cor C912  cor C903  cor  0.13440       2 180.00
+C902  cor C912  cor C903  cor C903  cor  0.15780       2 180.00
+H915  cor C912  cor C903  cor C912  cor  0.18210       2 180.00
+H915  cor C912  cor C903  cor C903  cor  0.18210       2 180.00
+C912  cor C903  cor C903  cor C912  cor  0.13440       2 180.00
+#BTC
+C902  cor C912  cor C902  cor C912  cor  0.13443       2 180.00
+C912  cor C902  cor C912  cor H915  cor  0.18213       2 180.00
+O170  cor C913  cor C902  cor C912  cor   1.0602       2 180.00
+C913  cor C902  cor C912  cor C902  cor  0.13443       2 180.00
+#AZULENE
+O170  cor C913  cor C914  cor C916  cor   1.0602       2 180.00
+O170  cor C913  cor C918  cor C919  cor   1.0602       2 180.00
+C913  cor C918  cor C919  cor C919  cor  0.22116       2 180.00
+C913  cor C914  cor C916  cor C917  cor  0.22116       2 180.00
+C913  cor C918  cor C919  cor H920  cor  0.10407       2 180.00
+C913  cor C914  cor C916  cor H921  cor  0.10407       2 180.00
+C916  cor C914  cor C916  cor C917  cor  0.39028       2 180.00
+C914  cor C916  cor C917  cor C919  cor  0.39028       2 180.00
+H921  cor C916  cor C917  cor C919  cor  0.95402E-01   2 180.00
+C916  cor C914  cor C916  cor H921  cor  0.10407       2 180.00
+C916  cor C917  cor C917  cor C916  cor  0.21682       2 180.00
+C914  cor C916  cor C917  cor C917  cor  0.21682       2 180.00
+H921  cor C916  cor C917  cor C917  cor  0.95402E-01   2 180.00
+C919  cor C919  cor C918  cor C919  cor  0.24284       2 180.00
+C918  cor C919  cor C919  cor C917  cor  0.24284       2 180.00
+C918  cor C919  cor C919  cor H920  cor  0.13877       2 180.00
+C919  cor C918  cor C919  cor H920  cor  0.13877       2 180.00
+C917  cor C919  cor C919  cor H920  cor  0.18213       2 180.00
+H920  cor C919  cor C919  cor H920  cor  0.13443       2 180.00
+C919  cor C919  cor C917  cor C916  cor  0.30355       2 180.00
+C919  cor C919  cor C917  cor C917  cor  0.30355       2 180.00
+H920  cor C919  cor C917  cor C916  cor  0.13443       2 180.00
+C916  cor C917  cor C917  cor C919  cor  0.30355       2 180.00
+C919  cor C917  cor C917  cor C919  cor  0.30355       2 180.00
+
+
+output xyz
+
+cova
+Zn172 0.0 
+Ti 0.0
+Al 0.0
+Zr 0.0
+end 

@@ -1,0 +1,47 @@
+SYSTEM = Zr-mil-125
+
+!Start Parameters:
+ INIWAV = 1        (Random initial wavefunction)
+ ICORELEVEL = 1    (Print corelevels in OUTCAR)
+ ISTART = 1
+
+!Parallel Options:
+ NPAR   =  8        (Max is no. nodes)
+
+
+!Electronic Relaxation:
+ PREC  = normal  (Precision level)
+ LREAL = auto      (Projection operators: automatic)
+ ALGO  = fast      (Elect. algorithm: 38/48)
+ ENCUT = 600.00 eV (Plane-wave cutoff)
+ NELM  = 80        (Max number of SCF steps)
+ NELMIN = 5
+ EDIFF = 1E-08    (SCF convergence)
+ ISPIN =  1        (Close shell)
+
+!!LEPSILON = .TRUE.
+!!IBRION = 8 
+!!NWRITE = 3
+
+IVDW = 11
+SIGMA = 0.01
+ISMEAR = 0
+
+ GGA   =  PS       (PBEsol exchange-correlation)
+!ICHARG = 11
+!!ICHARG set at 11 for band structure calc
+!! NBANDS = 350
+!!LAECHG=.TRUE.
+!!LELF  = .TRUE.
+!!ISYM =0
+
+!Ionic Relaxation:
+ EDIFFG =  -0.005    (Ionic convergence)
+ NSW    =      25     (Max ionic steps)
+ IBRION =      1     (Ions: 0-MD, 1-Quasi-New, 2-CG)
+ ISIF   =      3     (Stress/Relaxation: 2-Ions, 3-Ions+volume+Shape)
+
+!Miscellaneous:
+ LORBIT    =   10     (PAW radii for projected DOS)
+ NEDOS = 1000
+
