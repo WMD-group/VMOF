@@ -1,6 +1,8 @@
 # VMOF
 
-A general forcefield for accurate phonon properties of metal-organic frameworks. It is a major revision of our previous [BTW](https://github.com/WMD-group/BTW-FF) project. The following files contain the data used in: *"A general forcefield for accurate phonon properties of metal-organic frameworks"*  Jessica K. Bristow, Jonathan M. Skelton, Katrine L. Svane, Aron Walsh and Julian D. Gale (Under Review, 2016).
+A general forcefield for accurate phonon properties of metal-organic frameworks. It is a major revision of our previous [BTW](https://github.com/WMD-group/BTW-FF) project. 
+
+The following files contain the data used in: *"A general forcefield for accurate phonon properties of metal-organic frameworks"*  Jessica K. Bristow, Jonathan M. Skelton, Katrine L. Svane, Aron Walsh and Julian D. Gale [PCCP, 2016](http://pubs.rsc.org/en/content/articlelanding/2016/cp/c6cp05106e#!divAbstract).
 
 The files are structured in 3 parent directories:
 
